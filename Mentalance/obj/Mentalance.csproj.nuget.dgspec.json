@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dudab\\source\\repos\\Mentalance\\Mentalance\\Mentalance.csproj": {}
+    "D:\\Mentalance-API\\Mentalance\\Mentalance.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dudab\\source\\repos\\Mentalance\\Mentalance\\Mentalance.csproj": {
+    "D:\\Mentalance-API\\Mentalance\\Mentalance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudab\\source\\repos\\Mentalance\\Mentalance\\Mentalance.csproj",
+        "projectUniqueName": "D:\\Mentalance-API\\Mentalance\\Mentalance.csproj",
         "projectName": "Mentalance",
-        "projectPath": "C:\\Users\\dudab\\source\\repos\\Mentalance\\Mentalance\\Mentalance.csproj",
-        "packagesPath": "C:\\Users\\dudab\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudab\\source\\repos\\Mentalance\\Mentalance\\obj\\",
+        "projectPath": "D:\\Mentalance-API\\Mentalance\\Mentalance.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\Mentalance-API\\Mentalance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dudab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -70,6 +69,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.10, )"
             },
@@ -108,10 +111,6 @@
             "OpenTelemetry.Instrumentation.Http": {
               "target": "Package",
               "version": "[1.14.0, )"
-            },
-            "Oracle.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.23.26000, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -161,7 +160,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

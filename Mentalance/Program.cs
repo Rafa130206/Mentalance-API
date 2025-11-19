@@ -101,7 +101,7 @@ builder.Services.AddVersionedApiExplorer(options =>
 
 // Banco de dados
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 // Registra Repositórios
@@ -122,7 +122,7 @@ builder.Services.AddHealthChecks()
     .AddDbContextCheck<AppDbContext>(
         name: "database",
         failureStatus: Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy,
-        tags: new[] { "db", "sql", "oracle" });
+        tags: new[] { "db", "sql", "sqlserver", "azure" });
 
 // CORS
 builder.Services.AddCors(options =>

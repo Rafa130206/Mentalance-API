@@ -195,6 +195,7 @@
                     }
                   
             </remarks>
+            <param name="usuarioDto">Dados do usuário para criação</param>
         </member>
         <member name="M:Mentalance.Controllers.UsuariosController.PutUsuario(System.Int32,Mentalance.Dto.UsuarioDto)">
             <summary>
@@ -308,30 +309,6 @@
             <summary>
             Cargo/função do usuário no sistema
             </summary>
-        </member>
-        <member name="T:Mentalance.Migrations.InitialCreate">
-            <inheritdoc />
-        </member>
-        <member name="M:Mentalance.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:Mentalance.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:Mentalance.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:Mentalance.Migrations.AdicionarRecomendacaoAnaliseSemanal">
-            <inheritdoc />
-        </member>
-        <member name="M:Mentalance.Migrations.AdicionarRecomendacaoAnaliseSemanal.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:Mentalance.Migrations.AdicionarRecomendacaoAnaliseSemanal.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:Mentalance.Migrations.AdicionarRecomendacaoAnaliseSemanal.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
         </member>
         <member name="T:Mentalance.ML.Data.AnaliseML">
             <summary>

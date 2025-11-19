@@ -47,7 +47,7 @@ A API foi desenvolvida seguindo boas práticas de desenvolvimento, incluindo arq
 - **ASP.NET Core** - Framework web
 
 ### Banco de Dados
-- **Oracle Database** - Banco de dados relacional
+- **SQL Server (Azure)** - Banco de dados relacional na nuvem
 - **Entity Framework Core 9.0** 
 
 ### Machine Learning
@@ -70,7 +70,7 @@ A API foi desenvolvida seguindo boas práticas de desenvolvimento, incluindo arq
 Antes de começar, certifique-se de ter instalado:
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [Oracle Database](https://www.oracle.com/database/) ou acesso a uma instância Oracle
+- [SQL Server Azure](https://azure.microsoft.com/services/sql-database/) ou acesso a uma instância SQL Server
 - [Visual Studio 2022](https://visualstudio.microsoft.com/) 
 - [Git] (para clonar o repositório)
 
@@ -99,15 +99,21 @@ dotnet ef database update
 
 ### String de Conexão
 
-Edite o arquivo `appsettings.json` ou `appsettings.Development.json` e configure a string de conexão do Oracle:
+Edite o arquivo `appsettings.json` ou `appsettings.Development.json` e configure a string de conexão do SQL Server da Azure:
 
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "User Id=seu_usuario;Password=sua_senha;Data Source=servidor:porta/orcl"
+    "DefaultConnection": "Server=tcp:seu_servidor.database.windows.net,1433;Initial Catalog=seu_banco;Persist Security Info=False;User ID=seu_usuario;Password=sua_senha;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   }
 }
 ```
+
+**Substitua os seguintes valores:**
+- `seu_servidor`: Nome do servidor SQL Server da Azure (ex: `meuservidor.database.windows.net`)
+- `seu_banco`: Nome do banco de dados
+- `seu_usuario`: Nome de usuário do SQL Server
+- `sua_senha`: Senha do SQL Server
 
 ### Configuração de Logging
 
@@ -304,7 +310,7 @@ Rastreamento distribuído configurado para:
 ### Health Checks
 
 Endpoint `/health` monitora:
-- Status do banco de dados Oracle
+- Status do banco de dados SQL Server (Azure)
 - Saúde geral da aplicação
 
 ## 🧪 Testes
